@@ -1,2 +1,0 @@
-
-Collin Richards
