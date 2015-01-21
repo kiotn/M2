@@ -1,4 +1,4 @@
-//package edu.gatech.oad.antlab.person;
+package edu.gatech.oad.antlab.person;
 
 /**
  *  A simple class for person 5
@@ -8,16 +8,16 @@
  *  @author Bob
  *  @version 1.1
  */
-import java.util.Scanner;
+//import java.util.Scanner;
 public class Person5 {
   /** Holds the persons real name */
 
-    public static void main(String[] args) {
-		Scanner reader = new Scanner (System.in);
-		Person5 name = new Person5("gtg123b");
-		System.out.println("gtg123b");
-		System.out.println(name.calc("gtg123b"));
-    }
+  //   public static void main(String[] args) {
+		// Scanner reader = new Scanner (System.in);
+		// Person5 name = new Person5("gtg123b");
+		// System.out.println("gtg123b");
+		// System.out.println(name.calc("gtg123b"));
+  //   }
   private String name;
   	/**
 	 * The constructor, takes in the persons
