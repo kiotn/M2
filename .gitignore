@@ -1,0 +1,5 @@
+
+#Prevent commiting build directory
+.gradle/*
+build/*
+
