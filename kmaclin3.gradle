@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+repositories {
+	flatDir {
+		dirs "lib"
+	}
+}
+
+task copyLib(type: Copy) {
+	from "lib"
+	into "$buildDir/libs"
+}
+
+jar {
+	dependsOn copyLib
+	manifest {
+		attributes "Main-Class": "edu/gatech/oad/antlab/pkg1/AntLabMain",
+		 "Class-Path" : "resources.jar"
+	}
+}
+
+dependencies {
+	compile files("lib/resources.jar")
+}
