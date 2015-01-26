@@ -1,5 +1,7 @@
 apply plugin: 'java'
 
+defaultTasks 'clean'
+
 repositories {
 	flatDir {
 		dirs "lib"
